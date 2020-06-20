@@ -1,0 +1,240 @@
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    font-size: 24px;
+    list-style: none;
+    
+    margin-bottom: 20; 
+    background: rgb(4, 58, 77);
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background: #1565C0;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+
+  <!-- --> <!-- --> <!-- --> <!-- --> <!-- --><!-- --> <!-- --> <!-- --> <!-- --> <!-- --><!-- --> <!-- --> <!-- --> 
+
+.flex-container1 {
+ 
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    list-style: none;
+    background-color: aqua;
+  }
+  
+
+  .item5 {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+  .item6 {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  .item1{
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+   
+  }
+
+  .item2{    
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .item3{
+    background: tomato;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .item4{    
+    background: tomato;
+    padding: 5px;
+    width: 400px;
+    height:180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 910px) {
+
+    .item2  { order: 1; }
+    .item3  { order: 2; }
+    .item4  { order: 3; }
+    .item1  { order: 4; } 
+    .item5  { order: 5; }
+    .item6  { order: 6; }
+    .item4{
+        width: 700px;
+        height: 120px;
+        font-size: 18px;
+    }
+
+  }
+
+
+  <!-- --> <!-- --> <!-- --> <!-- --> <!-- --><!-- --> <!-- --> <!-- --> <!-- --> <!-- --><!-- --> <!-- --> <!-- --> 
+
+
+  .wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  
+  .header {
+    background: tomato;
+    font-size: 35px; 
+  }
+  
+  .footer {
+    background: lightgreen;
+    font-size: 35px; 
+    
+  }
+  
+  .main {
+    text-align: left;
+    background: deepskyblue;
+    font-size: 22px;
+  }
+  
+  .aside-1 {
+    background: gold;
+    font-size: 20px;
+  }
+  
+  .aside-2 {
+    background: hotpink;
+    font-size: 20px;
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    .aside-1 { order: 1; } 
+    .main    { order: 2; }
+    .aside-2 { order: 3; }
+    .footer  { order: 4; }
+  }
+  
+  <!-- --> <!-- --> <!-- --> <!-- --> <!-- --><!-- --> <!-- --> <!-- --> <!-- --> <!-- --><!-- --> <!-- --> <!-- -->  
+
+
+
+
+
+  .flex-container {
+    background-color: aqua;
+    display: flex;
+    margin-top: 10px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+  }
